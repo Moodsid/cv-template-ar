@@ -1,96 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <link rel="stylesheet" href="english-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="theme-1">
+<!--  theme selector -->
+<div class="top-controls">
+    <div class="theme-selector">
+        <h3>Choose Theme:</h3>
+        <div class="theme-options">
+            <button class="theme-btn active" data-theme="theme-1">Theme 1</button>
+            <button class="theme-btn" data-theme="theme-2">Theme 2</button>
+            <button class="theme-btn" data-theme="theme-3">Theme 3</button>
+            <button class="theme-btn" data-theme="theme-4">Theme 4</button>
+            <button class="theme-btn" data-theme="theme-5">Theme 5</button>
+            <button class="theme-btn" data-theme="theme-6">Theme 6</button>
+            <button class="theme-btn" data-theme="theme-7">Theme 7</button>
+            <button class="theme-btn" data-theme="theme-8">Theme 8</button>
+            <button class="theme-btn" data-theme="theme-9">Theme 9</button>
+            <button class="theme-btn" data-theme="theme-10">Theme 10</button>
+        </div>
+    </div>
+    
+    <div class="language-selector">
+        <h3>Language:</h3>
+        <div class="language-options">
+            <a href="arabic.html" class="language-link">العربية</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <img src="pp.jpg" alt="Profile Photo" class="profile-img">
+                <div>
+                    <h1 class="name-title">John Doe</h1>
+                    <h3>Web Developer & Designer</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>john.doe@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Navigation -->
+  <nav>
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- About Section -->
+  <section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate web developer with over 5 years of experience in creating responsive, user-friendly websites and applications. My expertise spans across front-end and back-end development, with a strong focus on delivering clean, efficient, and maintainable code.</p>
+                <div class="personal-info">
+                    <h3>Personal Information</h3>
+                    <div class="personal-info-item">
+                        <span>Date of Birth:</span> January 15, 1990
+                    </div>
+                    <div class="personal-info-item">
+                        <span>Website:</span> www.johndoe.com
+                    </div>
+                    <div class="personal-info-item">
+                        <span>LinkedIn:</span> linkedin.com/in/johndoe
+                    </div>
+                    <div class="personal-info-item">
+                        <span>GitHub:</span> github.com/johndoe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3 class="timeline-title">Senior Web Developer</h3>
+                        <div class="timeline-location">Tech Solutions Inc., New York</div>
+                        <p>Led a team of 5 developers in building scalable web applications for enterprise clients. Improved site loading speed by 40% through optimization techniques. Implemented CI/CD pipelines reducing deployment time by 60%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2021</div>
+                        <h3 class="timeline-title">Web Developer</h3>
+                        <div class="timeline-location">Digital Crafts Agency, San Francisco</div>
+                        <p>Developed and maintained over 20 client websites, focusing on responsive design and cross-browser compatibility. Collaborated with designers to implement pixel-perfect UIs and enhanced user experiences.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016 - 2018</div>
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <div class="timeline-location">StartUp Innovations, Boston</div>
+                        <p>Assisted in the development of a SaaS platform for small businesses. Implemented front-end features using HTML, CSS, and JavaScript. Collaborated in an agile environment with daily stand-ups and sprint planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014 - 2016</div>
+                        <h3 class="timeline-title">Master of Science in Computer Science</h3>
+                        <div class="timeline-location">Massachusetts Institute of Technology</div>
+                        <p>Specialized in Web Technologies and User Interface Design. Graduated with honors (GPA: 3.8/4.0). Thesis: "Optimizing Web Applications for Accessibility and Performance".</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010 - 2014</div>
+                        <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+                        <div class="timeline-location">University of California, Berkeley</div>
+                        <p>Coursework in Data Structures, Algorithms, Database Systems, and Web Development. Member of Computer Science Club and Hackathon Team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5/CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Communication</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Team Leadership</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Project Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Time Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Git/GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Webpack</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SASS/LESS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/600/400" alt="E-commerce Platform" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with product management, user authentication, and payment processing.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/600/400" alt="Task Management App" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, team assignments, and progress tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/600/400" alt="Weather Dashboard" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p>A responsive weather application that displays current conditions and forecasts based on user location.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API Integration</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <h3 class="cert-title">AWS Certified Solutions Architect</h3>
+                    <div class="cert-issuer">Amazon Web Services</div>
+                    <div class="cert-date">Issued: December 2022</div>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Advanced React and Redux</h3>
+                    <div class="cert-issuer">Udemy</div>
+                    <div class="cert-date">Issued: July 2021</div>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">MongoDB Database Administrator</h3>
+                    <div class="cert-issuer">MongoDB University</div>
+                    <div class="cert-date">Issued: March 2020</div>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Professional Scrum Master I</h3>
+                    <div class="cert-issuer">Scrum.org</div>
+                    <div class="cert-date">Issued: October 2019</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <ul class="achievements-list">
+                <li class="achievement-item">
+                    <h3 class="achievement-title">Best Web Application Award</h3>
+                    <p>Received at AngelHack Hackathon 2022 for developing an innovative accessibility solution for visually impaired users.</p>
+                </li>
+                <li class="achievement-item">
+                    <h3 class="achievement-title">Open Source Contributor Recognition</h3>
+                    <p>Recognized as a top contributor to the React ecosystem for developing and maintaining a popular UI component library.</p>
+                </li>
+                <li class="achievement-item">
+                    <h3 class="achievement-title">Tech Speaker of the Year</h3>
+                    <p>Awarded by Local Tech Community for educational workshops on modern web development practices.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-container">
+                <div class="language-card">
+                    <h3 class="language-name">English</h3>
+                    <div class="language-level" data-percent="Native"></div>
+                </div>
+                <div class="language-card">
+                    <h3 class="language-name">Spanish</h3>
+                    <div class="language-level" data-percent="Fluent"></div>
+                </div>
+                <div class="language-card">
+                    <h3 class="language-name">French</h3>
+                    <div class="language-level" data-percent="Intermediate"></div>
+                </div>
+                <div class="language-card">
+                    <h3 class="language-name">German</h3>
+                    <div class="language-level" data-percent="Basic"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <h3 class="reference-name">Sarah Johnson</h3>
+                    <div class="reference-position">CTO, Tech Solutions Inc.</div>
+                    <p>"John is an exceptional developer with a keen eye for detail and a commitment to quality. His leadership skills and technical expertise have been invaluable to our team."</p>
+                </div>
+                <div class="reference-card">
+                    <h3 class="reference-name">Michael Chen</h3>
+                    <div class="reference-position">Senior Developer, Digital Crafts Agency</div>
+                    <p>"Working with John was a pleasure. His problem-solving abilities and dedication to creating user-friendly experiences set him apart from other developers I've worked with."</p>
+                </div>
+                <div class="reference-card">
+                    <h3 class="reference-name">Emily Rodriguez</h3>
+                    <div class="reference-position">Product Manager, StartUp Innovations</div>
+                    <p>"John consistently delivered high-quality work ahead of schedule. His ability to translate business requirements into technical solutions made our collaboration seamless."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="english-script.js"></script>
+</body>
 </html>
