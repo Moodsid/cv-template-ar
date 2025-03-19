@@ -1,478 +1,583 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السيرة الذاتية</title>
-    <link rel="stylesheet" href="style-ar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body class="theme-1">
-<!--  مختار السمات -->
-<div class="top-controls">
-    <div class="theme-selector">
-        <h3>اختر السمة:</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيرة الذاتية المهنية</title>
+    <link rel="stylesheet" href="style-ar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body class="theme-1">
+    <button class="theme-toggle-btn" id="themeToggleBtn">
+      <i class="fas fa-palette"></i>
+    </button>
+
+    <!-- مختار النمط -->
+    <div class="theme-selector" id="themeSelector">
+      <div class="container">
+        <h3>اختر النمط:</h3>
         <div class="theme-options">
-            <button class="theme-btn active" data-theme="theme-1">السمة 1</button>
-            <button class="theme-btn" data-theme="theme-2">السمة 2</button>
-            <button class="theme-btn" data-theme="theme-3">السمة 3</button>
-            <button class="theme-btn" data-theme="theme-4">السمة 4</button>
-            <button class="theme-btn" data-theme="theme-5">السمة 5</button>
-            <button class="theme-btn" data-theme="theme-6">السمة 6</button>
-            <button class="theme-btn" data-theme="theme-7">السمة 7</button>
-            <button class="theme-btn" data-theme="theme-8">السمة 8</button>
-            <button class="theme-btn" data-theme="theme-9">السمة 9</button>
-            <button class="theme-btn" data-theme="theme-10">السمة 10</button>
+          <button class="theme-btn active" data-theme="theme-1">النمط 1</button>
+          <button class="theme-btn" data-theme="theme-2">النمط 2</button>
+          <button class="theme-btn" data-theme="theme-4">النمط 3</button>
+          <button class="theme-btn" data-theme="theme-6">النمط 4</button>
+          <button class="theme-btn" data-theme="theme-7">النمط 5</button>
         </div>
+      </div>
     </div>
-    
-    <div class="language-selector">
-        <h3>اللغة:</h3>
-        <div class="language-options">
-            <a href="english.html" class="language-link">English</a>
-        </div>
-    </div>
-</div>
 
     <!-- الترويسة -->
     <header id="home">
-        <div class="container">
-            <div class="header-content">
-                <img src="pp.jpg" alt="صورة الملف الشخصي" class="profile-img">
-                <div>
-                    <h1 class="name-title">جون دو</h1>
-                    <h3>مطور ومصمم مواقع</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>john.doe@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>نيويورك</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="header-content">
+          <img src="pp.jpg" alt="صورة شخصية" class="profile-img" />
+          <div>
+            <h1 class="name-title">أحمد خالد</h1>
+            <h3>مطور ومصمم ويب</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>ahmed.khaled@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+١ (٥٥٥) ١٢٣-٤٥٦٧</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>القاهرة، مصر</span>
+              </div>
             </div>
+          </div>
         </div>
-        <button class="mobile-nav-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
+      </div>
+      <button class="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
 
-    <!-- التنقل -->
-  <nav>
-    <div class="container">
-        <ul class="nav-links">
+    <div class="main-content">
+      <nav>
+        <div class="container">
+          <ul class="nav-links">
             <li><a href="#home">الرئيسية</a></li>
             <li><a href="#about">نبذة عني</a></li>
-            <li><a href="#experience">الخبرة</a></li>
+            <li><a href="#experience">الخبرات</a></li>
             <li><a href="#education">التعليم</a></li>
             <li><a href="#skills">المهارات</a></li>
             <li><a href="#projects">المشاريع</a></li>
             <li><a href="#certifications">الشهادات</a></li>
             <li><a href="#achievements">الإنجازات</a></li>
             <li><a href="#languages">اللغات</a></li>
-            <li><a href="#references">المراجع</a></li>
+            <li><a href="#references">التوصيات</a></li>
             <li><a href="#contact">اتصل بي</a></li>
-        </ul>
-    </div>
-</nav>
-
-    <!-- قسم نبذة عني -->
-  <section id="about">
-    <div class="container">
-        <h2 class="section-title">نبذة عني</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>أنا مطور ويب شغوف بخبرة تزيد عن 5 سنوات في إنشاء مواقع وتطبيقات ويب سهلة الاستخدام ومتجاوبة. تمتد خبرتي عبر تطوير الواجهة الأمامية والخلفية، مع تركيز قوي على تقديم كود نظيف وفعال وقابل للصيانة.</p>
-                <div class="personal-info">
-                    <h3>معلومات شخصية</h3>
-                    <div class="personal-info-item">
-                        <span>تاريخ الميلاد:</span> 15 يناير 1990
-                    </div>
-                    <div class="personal-info-item">
-                        <span>الموقع الإلكتروني:</span> www.johndoe.com
-                    </div>
-                    <div class="personal-info-item">
-                        <span>لينكد إن:</span> linkedin.com/in/johndoe
-                    </div>
-                    <div class="personal-info-item">
-                        <span>جيت هاب:</span> github.com/johndoe
-                    </div>
-                </div>
-            </div>
+          </ul>
         </div>
-    </section>
-
-    <!-- قسم الخبرة -->
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">الخبرة العملية</h2>
+      </nav>
+      <div class="content-wrapper">
+        <section id="about">
+          <div class="container">
+            <h2 class="section-title">نبذة عني</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <p>
+                  أنا مطور ويب شغوف بخبرة تزيد عن ٥ سنوات في إنشاء مواقع
+                  وتطبيقات ويب متجاوبة وسهلة الاستخدام. تمتد خبرتي عبر تطوير
+                  الواجهة الأمامية والخلفية، مع تركيز قوي على تقديم كود نظيف
+                  وفعال وقابل للصيانة.
+                </p>
+                <p>
+                  خلال مسيرتي المهنية، عملت مع العديد من العملاء في مختلف
+                  الصناعات، مساعدًا إياهم في إنشاء تواجد قوي عبر الإنترنت وتحسين
+                  تجربة المستخدم الرقمية. أنا دائم التعلم واستكشاف التقنيات
+                  الجديدة للبقاء في المقدمة في هذا المجال المتطور باستمرار.
+                </p>
+                <p>
+                  عندما لا أكون مشغولًا بالبرمجة، يمكن أن تجدني أمارس رياضة
+                  المشي لمسافات طويلة، أو ألعب الشطرنج، أو أستكشف مقاهي جديدة في
+                  المدينة.
+                </p>
+              </div>
+              <div class="personal-info">
+                <h3>معلومات شخصية</h3>
+                <div class="personal-info-item">
+                  <span>تاريخ الميلاد:</span> ١٥ يناير ١٩٩٠
+                </div>
+                <div class="personal-info-item">
+                  <span>الموقع الإلكتروني:</span> www.ahmedkhaled.com
+                </div>
+                <div class="personal-info-item">
+                  <span>لينكد إن:</span> linkedin.com/in/ahmedkhaled
+                </div>
+                <div class="personal-info-item">
+                  <span>جيت هاب:</span> github.com/ahmedkhaled
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience">
+          <div class="container">
+            <h2 class="section-title">الخبرات العملية</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2021 - الآن</div>
-                        <h3 class="timeline-title">مطور ويب أول</h3>
-                        <div class="timeline-location">حلول التكنولوجيا المحدودة، نيويورك</div>
-                        <p>قدت فريقًا من 5 مطورين في بناء تطبيقات ويب قابلة للتوسع للعملاء المؤسسيين. حسّنت سرعة تحميل الموقع بنسبة 40٪ من خلال تقنيات التحسين. نفذت خطوط أنابيب CI/CD مما قلل وقت النشر بنسبة 60٪.</p>
-                    </div>
+              <div
+                class="timeline-item"
+                style="
+                  opacity: 1;
+                  transform: translateY(0px);
+                  transition: opacity 0.5s, transform 0.5s;
+                ">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">٢٠٢١ - الحاضر</div>
+                  <h3 class="timeline-title">مطور ويب أول</h3>
+                  <div class="timeline-location">
+                    شركة الحلول التقنية، القاهرة
+                  </div>
+                  <p>
+                    قيادة فريق من ٥ مطورين في بناء تطبيقات ويب قابلة للتوسع
+                    للعملاء المؤسسات. تحسين سرعة تحميل الموقع بنسبة ٤٠٪ من خلال
+                    تقنيات التحسين. تنفيذ خطوط أنابيب CI/CD لتقليل وقت النشر
+                    بنسبة ٦٠٪.
+                  </p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018 - 2021</div>
-                        <h3 class="timeline-title">مطور ويب</h3>
-                        <div class="timeline-location">وكالة ديجيتال كرافتس، سان فرانسيسكو</div>
-                        <p>طورت وحافظت على أكثر من 20 موقعًا للعملاء، مع التركيز على التصميم المتجاوب والتوافق مع متصفحات مختلفة. تعاونت مع المصممين لتنفيذ واجهات مستخدم مثالية وتحسين تجارب المستخدم.</p>
-                    </div>
+              </div>
+              <div
+                class="timeline-item"
+                style="
+                  opacity: 1;
+                  transform: translateY(0px);
+                  transition: opacity 0.5s, transform 0.5s;
+                ">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">٢٠١٨ - ٢٠٢١</div>
+                  <h3 class="timeline-title">مطور ويب</h3>
+                  <div class="timeline-location">
+                    وكالة الإبداع الرقمي، الإسكندرية
+                  </div>
+                  <p>
+                    تطوير وصيانة أكثر من ٢٠ موقعًا للعملاء، مع التركيز على
+                    التصميم المتجاوب والتوافق عبر المتصفحات. تعاونت مع المصممين
+                    لتنفيذ واجهات مستخدم مثالية وتعزيز تجارب المستخدم.
+                  </p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2016 - 2018</div>
-                        <h3 class="timeline-title">مطور مبتدئ</h3>
-                        <div class="timeline-location">ابتكارات ستارت أب، بوسطن</div>
-                        <p>ساعدت في تطوير منصة SaaS للشركات الصغيرة. نفذت ميزات الواجهة الأمامية باستخدام HTML و CSS و JavaScript. تعاونت في بيئة رشيقة مع اجتماعات يومية وتخطيط سبرنت.</p>
-                    </div>
+              </div>
+              <div
+                class="timeline-item"
+                style="
+                  opacity: 0;
+                  transform: translateY(20px);
+                  transition: opacity 0.5s, transform 0.5s;
+                ">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">٢٠١٦ - ٢٠١٨</div>
+                  <h3 class="timeline-title">مطور مبتدئ</h3>
+                  <div class="timeline-location">إبداعات ناشئة، القاهرة</div>
+                  <p>
+                    المساعدة في تطوير منصة SaaS للشركات الصغيرة. تنفيذ ميزات
+                    الواجهة الأمامية باستخدام HTML وCSS وJavaScript. التعاون في
+                    بيئة رشيقة (Agile) مع اجتماعات يومية وتخطيط سباقات.
+                  </p>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم التعليم -->
-    <section id="education">
-        <div class="container">
+          </div>
+        </section>
+        <section id="education">
+          <div class="container">
             <h2 class="section-title">التعليم</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2014 - 2016</div>
-                        <h3 class="timeline-title">ماجستير العلوم في علوم الحاسوب</h3>
-                        <div class="timeline-location">معهد ماساتشوستس للتكنولوجيا</div>
-                        <p>متخصص في تقنيات الويب وتصميم واجهة المستخدم. تخرجت بمرتبة الشرف (المعدل التراكمي: 3.8/4.0). أطروحة: "تحسين تطبيقات الويب للوصول والأداء".</p>
-                    </div>
+              <div
+                class="timeline-item"
+                style="
+                  opacity: 0;
+                  transform: translateY(20px);
+                  transition: opacity 0.5s, transform 0.5s;
+                ">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">٢٠١٤ - ٢٠١٦</div>
+                  <h3 class="timeline-title">ماجستير في علوم الحاسوب</h3>
+                  <div class="timeline-location">جامعة القاهرة</div>
+                  <p>
+                    تخصص في تقنيات الويب وتصميم واجهة المستخدم. تخرج بدرجة
+                    امتياز (المعدل: ٣.٨/٤.٠). أطروحة: "تحسين تطبيقات الويب
+                    للوصول والأداء".
+                  </p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2010 - 2014</div>
-                        <h3 class="timeline-title">بكالوريوس العلوم في علوم الحاسوب</h3>
-                        <div class="timeline-location">جامعة كاليفورنيا، بيركلي</div>
-                        <p>دراسة في هياكل البيانات، الخوارزميات، أنظمة قواعد البيانات، وتطوير الويب. عضو في نادي علوم الحاسوب وفريق هاكاثون.</p>
-                    </div>
+              </div>
+              <div
+                class="timeline-item"
+                style="
+                  opacity: 0;
+                  transform: translateY(20px);
+                  transition: opacity 0.5s, transform 0.5s;
+                ">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">٢٠١٠ - ٢٠١٤</div>
+                  <h3 class="timeline-title">بكالوريوس في علوم الحاسوب</h3>
+                  <div class="timeline-location">جامعة عين شمس</div>
+                  <p>
+                    دراسة هياكل البيانات، الخوارزميات، أنظمة قواعد البيانات،
+                    وتطوير الويب. عضو في نادي علوم الحاسوب وفريق هاكاثون.
+                  </p>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم المهارات -->
-    <section id="skills">
-        <div class="container">
+          </div>
+        </section>
+        <section id="skills">
+          <div class="container">
             <h2 class="section-title">المهارات</h2>
             <div class="skills-container">
-                <div class="skill-category">
-                    <h3>المهارات التقنية</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">HTML5/CSS3</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">React.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Node.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">MongoDB</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
+              <div class="skill-category">
+                <h3>المهارات التقنية</h3>
+                <div class="skill-item">
+                  <span class="skill-name">HTML5/CSS3</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
                 </div>
-                <div class="skill-category">
-                    <h3>المهارات الشخصية</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">حل المشكلات</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">التواصل</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">قيادة الفريق</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">إدارة المشاريع</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">إدارة الوقت</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                  <span class="skill-name">جافاسكريبت</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
                 </div>
-                <div class="skill-category">
-                    <h3>الأدوات والتقنيات</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Git/GitHub</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Docker</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">AWS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Webpack</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">SASS/LESS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                  <span class="skill-name">رياكت</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
                 </div>
+                <div class="skill-item">
+                  <span class="skill-name">نود جي إس</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">مونجو دي بي</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>المهارات الشخصية</h3>
+                <div class="skill-item">
+                  <span class="skill-name">حل المشكلات</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">التواصل</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">قيادة الفريق</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">إدارة المشاريع</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">إدارة الوقت</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>الأدوات والتقنيات</h3>
+                <div class="skill-item">
+                  <span class="skill-name">جيت/جيت هاب</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">دوكر</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">أمازون ويب سيرفيسز</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">ويب باك</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">SASS/LESS</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم المشاريع -->
-    <section id="projects">
-        <div class="container">
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
             <h2 class="section-title">المشاريع</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="/api/placeholder/600/400" alt="منصة التجارة الإلكترونية" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">منصة التجارة الإلكترونية</h3>
-                        <p>حل متكامل للتجارة الإلكترونية مع إدارة المنتجات، ومصادقة المستخدم، ومعالجة المدفوعات.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Stripe</span>
-                        </div>
-                        <a href="#" class="btn">عرض المشروع</a>
-                    </div>
+              <div class="project-card">
+                <img
+                  src="/api/placeholder/600/400"
+                  alt="منصة التجارة الإلكترونية"
+                  class="project-img" />
+                <div class="project-info">
+                  <h3 class="project-title">منصة تجارة إلكترونية</h3>
+                  <p>
+                    حل متكامل للتجارة الإلكترونية مع إدارة المنتجات، ومصادقة
+                    المستخدم، ومعالجة الدفع.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">رياكت</span>
+                    <span class="project-tag">نود جي إس</span>
+                    <span class="project-tag">مونجو دي بي</span>
+                    <span class="project-tag">سترايب</span>
+                  </div>
+                  <a href="#" class="btn">عرض المشروع</a>
                 </div>
-                <div class="project-card">
-                    <img src="/api/placeholder/600/400" alt="تطبيق إدارة المهام" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">تطبيق إدارة المهام</h3>
-                        <p>تطبيق تعاوني لإدارة المهام مع تحديثات في الوقت الحقيقي، وتعيينات الفريق، وتتبع التقدم.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Tailwind CSS</span>
-                        </div>
-                        <a href="#" class="btn">عرض المشروع</a>
-                    </div>
+              </div>
+              <div class="project-card">
+                <img
+                  src="/api/placeholder/600/400"
+                  alt="تطبيق إدارة المهام"
+                  class="project-img" />
+                <div class="project-info">
+                  <h3 class="project-title">تطبيق إدارة المهام</h3>
+                  <p>
+                    تطبيق تعاوني لإدارة المهام مع تحديثات في الوقت الفعلي،
+                    وتعيينات للفريق، وتتبع التقدم.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">فيو جي إس</span>
+                    <span class="project-tag">فايربيس</span>
+                    <span class="project-tag">تيلويند سي إس إس</span>
+                  </div>
+                  <a href="#" class="btn">عرض المشروع</a>
                 </div>
-                <div class="project-card">
-                    <img src="/api/placeholder/600/400" alt="لوحة معلومات الطقس" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">لوحة معلومات الطقس</h3>
-                        <p>تطبيق طقس متجاوب يعرض الظروف الحالية والتنبؤات بناءً على موقع المستخدم.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">تكامل API</span>
-                            <span class="project-tag">Chart.js</span>
-                        </div>
-                        <a href="#" class="btn">عرض المشروع</a>
-                    </div>
+              </div>
+              <div class="project-card">
+                <img
+                  src="/api/placeholder/600/400"
+                  alt="لوحة معلومات الطقس"
+                  class="project-img" />
+                <div class="project-info">
+                  <h3 class="project-title">لوحة معلومات الطقس</h3>
+                  <p>
+                    تطبيق طقس متجاوب يعرض الظروف الحالية والتوقعات بناءً على
+                    موقع المستخدم.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">جافاسكريبت</span>
+                    <span class="project-tag">تكامل واجهة برمجة التطبيقات</span>
+                    <span class="project-tag">شارت جي إس</span>
+                  </div>
+                  <a href="#" class="btn">عرض المشروع</a>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم الشهادات -->
-    <section id="certifications">
-        <div class="container">
-            <h2 class="section-title">الشهادات والتدريب</h2>
+          </div>
+        </section>
+        <section id="certifications">
+          <div class="container">
+            <h2 class="section-title">الشهادات والتدريبات</h2>
             <div class="cert-container">
-                <div class="cert-card">
-                    <h3 class="cert-title">مهندس حلول AWS معتمد</h3>
-                    <div class="cert-issuer">Amazon Web Services</div>
-                    <div class="cert-date">صدر في: ديسمبر 2022</div>
-                </div>
-                <div class="cert-card">
-                    <h3 class="cert-title">React و Redux المتقدم</h3>
-                    <div class="cert-issuer">Udemy</div>
-                    <div class="cert-date">صدر في: يوليو 2021</div>
-                </div>
-                <div class="cert-card">
-                    <h3 class="cert-title">مدير قاعدة بيانات MongoDB</h3>
-                    <div class="cert-issuer">MongoDB University</div>
-                    <div class="cert-date">صدر في: مارس 2020</div>
-                </div>
-                <div class="cert-card">
-                    <h3 class="cert-title">سكرم ماستر محترف I</h3>
-                    <div class="cert-issuer">Scrum.org</div>
-                    <div class="cert-date">صدر في: أكتوبر 2019</div>
-                </div>
+              <div class="cert-card">
+                <h3 class="cert-title">مهندس حلول AWS معتمد</h3>
+                <div class="cert-issuer">أمازون ويب سيرفيسز</div>
+                <div class="cert-date">تاريخ الإصدار: ديسمبر ٢٠٢٢</div>
+              </div>
+              <div class="cert-card">
+                <h3 class="cert-title">رياكت وريدكس المتقدم</h3>
+                <div class="cert-issuer">يوديمي</div>
+                <div class="cert-date">تاريخ الإصدار: يوليو ٢٠٢١</div>
+              </div>
+              <div class="cert-card">
+                <h3 class="cert-title">مدير قاعدة بيانات مونجو دي بي</h3>
+                <div class="cert-issuer">جامعة مونجو دي بي</div>
+                <div class="cert-date">تاريخ الإصدار: مارس ٢٠٢٠</div>
+              </div>
+              <div class="cert-card">
+                <h3 class="cert-title">سكرم ماستر محترف I</h3>
+                <div class="cert-issuer">Scrum.org</div>
+                <div class="cert-date">تاريخ الإصدار: أكتوبر ٢٠١٩</div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم الإنجازات -->
-    <section id="achievements">
-        <div class="container">
+          </div>
+        </section>
+        <section id="achievements">
+          <div class="container">
             <h2 class="section-title">الإنجازات والجوائز</h2>
             <ul class="achievements-list">
-                <li class="achievement-item">
-                    <h3 class="achievement-title">جائزة أفضل تطبيق ويب</h3>
-                    <p>حصلت عليها في هاكاثون AngelHack 2022 لتطوير حل مبتكر للوصول للمستخدمين ضعاف البصر.</p>
-                </li>
-                <li class="achievement-item">
-                    <h3 class="achievement-title">تقدير المساهم في المصدر المفتوح</h3>
-                    <p>معترف به كمساهم رئيسي في نظام React لتطوير والحفاظ على مكتبة مكونات واجهة مستخدم شائعة.</p>
-                </li>
-                <li class="achievement-item">
-                    <h3 class="achievement-title">متحدث تقني للعام</h3>
-                    <p>منحت من قبل مجتمع التكنولوجيا المحلي لورش العمل التعليمية حول ممارسات تطوير الويب الحديثة.</p>
-                </li>
+              <li class="achievement-item">
+                <h3 class="achievement-title">جائزة أفضل تطبيق ويب</h3>
+                <p>
+                  حصلت عليها في هاكاثون أنجل هاك ٢٠٢٢ لتطوير حل مبتكر لإمكانية
+                  الوصول للمستخدمين ذوي الإعاقة البصرية.
+                </p>
+              </li>
+              <li class="achievement-item">
+                <h3 class="achievement-title">تقدير المساهم في مصادر مفتوحة</h3>
+                <p>
+                  تم الإعتراف بي كأحد أهم المساهمين في نظام رياكت البيئي لتطوير
+                  وصيانة مكتبة مكونات واجهة مستخدم شائعة.
+                </p>
+              </li>
+              <li class="achievement-item">
+                <h3 class="achievement-title">متحدث تقني للعام</h3>
+                <p>
+                  منحت من قبل مجتمع التكنولوجيا المحلي لورش العمل التعليمية حول
+                  ممارسات تطوير الويب الحديثة.
+                </p>
+              </li>
             </ul>
-        </div>
-    </section>
-
-    <!-- قسم اللغات -->
-    <section id="languages">
-        <div class="container">
+          </div>
+        </section>
+        <section id="languages">
+          <div class="container">
             <h2 class="section-title">اللغات</h2>
             <div class="languages-container">
-                <div class="language-card">
-                    <h3 class="language-name">الإنجليزية</h3>
-                    <div class="language-level" data-percent="اللغة الأم"></div>
-                </div>
-                <div class="language-card">
-                    <h3 class="language-name">الإسبانية</h3>
-                    <div class="language-level" data-percent="طلاقة"></div>
-                </div>
-                <div class="language-card">
-                    <h3 class="language-name">الفرنسية</h3>
-                    <div class="language-level" data-percent="متوسط"></div>
-                </div>
-                <div class="language-card">
-                    <h3 class="language-name">الألمانية</h3>
-                    <div class="language-level" data-percent="أساسي"></div>
-                </div>
+              <div class="language-card">
+                <h3 class="language-name">العربية</h3>
+                <div class="language-level" data-percent="اللغة الأم"></div>
+              </div>
+              <div class="language-card">
+                <h3 class="language-name">الإنجليزية</h3>
+                <div class="language-level" data-percent="طلاقة"></div>
+              </div>
+              <div class="language-card">
+                <h3 class="language-name">الفرنسية</h3>
+                <div class="language-level" data-percent="متوسط"></div>
+              </div>
+              <div class="language-card">
+                <h3 class="language-name">الألمانية</h3>
+                <div class="language-level" data-percent="مبتدئ"></div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم المراجع -->
-    <section id="references">
-        <div class="container">
-            <h2 class="section-title">المراجع</h2>
+          </div>
+        </section>
+        <section id="references">
+          <div class="container">
+            <h2 class="section-title">التوصيات</h2>
             <div class="references-grid">
-                <div class="reference-card">
-                    <h3 class="reference-name">سارة جونسون</h3>
-                    <div class="reference-position">المدير التقني، حلول التكنولوجيا المحدودة</div>
-                    <p>"جون مطور استثنائي مع عين فاحصة للتفاصيل والتزام بالجودة. مهارات قيادته وخبرته التقنية كانت لا تقدر بثمن لفريقنا."</p>
+              <div class="reference-card">
+                <h3 class="reference-name">سارة محمود</h3>
+                <div class="reference-position">
+                  المدير التقني، شركة الحلول التقنية
                 </div>
-                <div class="reference-card">
-                    <h3 class="reference-name">مايكل تشن</h3>
-                    <div class="reference-position">مطور أول، وكالة ديجيتال كرافتس</div>
-                    <p>"العمل مع جون كان متعة. قدراته في حل المشكلات وتفانيه في إنشاء تجارب سهلة الاستخدام ميزته عن المطورين الآخرين الذين عملت معهم."</p>
+                <p>
+                  "أحمد مطور استثنائي يتمتع بعين دقيقة للتفاصيل والتزام بالجودة.
+                  كانت مهاراته القيادية وخبرته التقنية لا تقدر بثمن لفريقنا."
+                </p>
+              </div>
+              <div class="reference-card">
+                <h3 class="reference-name">محمد حسين</h3>
+                <div class="reference-position">
+                  مطور أول، وكالة الإبداع الرقمي
                 </div>
-                <div class="reference-card">
-                    <h3 class="reference-name">إميلي رودريغيز</h3>
-                    <div class="reference-position">مدير منتج، ابتكارات ستارت أب</div>
-                    <p>"قدم جون باستمرار عملاً عالي الجودة قبل الموعد المحدد. قدرته على ترجمة متطلبات العمل إلى حلول تقنية جعل تعاوننا سلسًا."</p>
-                </div>
+                <p>
+                  "العمل مع أحمد كان متعة. قدراته في حل المشكلات وتفانيه في
+                  إنشاء تجارب سهلة الاستخدام تميزه عن المطورين الآخرين الذين
+                  عملت معهم."
+                </p>
+              </div>
+              <div class="reference-card">
+                <h3 class="reference-name">إيمان عبد الرحمن</h3>
+                <div class="reference-position">مدير المنتج، إبداعات ناشئة</div>
+                <p>
+                  "قدم أحمد باستمرار عملًا عالي الجودة قبل الموعد المحدد. قدرته
+                  على ترجمة متطلبات العمل إلى حلول تقنية جعل تعاوننا سلسًا."
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم الاتصال -->
-    <section id="contact">
-        <div class="container">
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
             <h2 class="section-title">اتصل بي</h2>
             <div class="contact-form-container">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="form-label">الاسم</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">البريد الإلكتروني</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">الموضوع</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">الرسالة</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">إرسال الرسالة</button>
-                </form>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">الاسم</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    required="" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required="" />
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">الموضوع</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    class="form-control"
+                    required="" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">الرسالة</label>
+                  <textarea
+                    id="message"
+                    class="form-control"
+                    required=""></textarea>
+                </div>
+                <button type="submit" class="btn">إرسال الرسالة</button>
+              </form>
             </div>
-        </div>
-    </section>
-
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- التذييل -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 جون دو. جميع الحقوق محفوظة.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-            </div>
+      <div class="container">
+        <p>&copy; ٢٠٢٥ أحمد خالد. جميع الحقوق محفوظة.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
         </div>
+      </div>
     </footer>
 
     <a href="#home" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </a>
 
-    <script src="arabic-script.js"></script>
-</body>
+    <script src="script-ar.js"></script>
+  </body>
 </html>
